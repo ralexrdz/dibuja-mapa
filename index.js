@@ -1,3 +1,4 @@
+/* globals L, pines, poligonos, lineas */
 // VARIABLE GLOBAL
 let map
 let pointsArray
@@ -16,19 +17,19 @@ document.addEventListener('DOMContentLoaded', function () {
   agregaCapas()
 })
 
-function onMapClick(e) {
+function onMapClick (e) {
   pointsArray.push([e.latlng.lat, e.latlng.lng])
   console.log(pointsArray)
 }
 
-function startPolygon() {
+function startPolygon () {
   pointsArray = []
   document.getElementById('start-polygon').setAttribute('disabled', true)
   document.getElementById('draw-polygon').removeAttribute('disabled')
   map.on('click', onMapClick)
 }
 
-function finishPolygon() {
+function finishPolygon () {
   document.getElementById('draw-polygon').setAttribute('disabled', true)
   document.getElementById('start-polygon').removeAttribute('disabled')
   map.off('click', onMapClick)
