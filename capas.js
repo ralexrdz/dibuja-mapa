@@ -1,12 +1,10 @@
 let pines = [
-  [19.4, -99.4],
-  [19.5, -99.5],
-  [19.3, -99.5],
-  [19.2, -99.6]
 ]
 
 // Agrega AQUI LAS COORDENADAS DE TUS POLIGONOS
-let poligonos = [
+
+let poligonos = []
+/* let poligonos = [
   {
     coords: [
       [19.584266369015907,-99.140625],
@@ -26,16 +24,7 @@ let poligonos = [
     ],
     color: '#ffae78'
   }
-]
+] */
 
 let lineas = [
-  {
-    coords: [
-      [19.6, -99.3],
-      [19.3, -99.5],
-      [19.7, -99.1],
-      [19.2, -99.9]
-    ],
-    color: '#888888'
-  }
 ]
